@@ -36,5 +36,5 @@ Before running the application, ensure you have the following:
     ```bash
     java -cp "libs/gson-2.11.0.jar:bin" Update
     ```
-    ![Application Screenshot](images/Screenshot.png)
+    ![Application Screenshot](images/screenshot.png)
     This screenshot shows the output on the terminal.
