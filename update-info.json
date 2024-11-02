@@ -1,4 +1,5 @@
 {
-    "version": "1.1.1",
-    "url": "http://server.com/new-version.jar"
+    "version": "1.2.0",
+    "url": "http://localhost:8080/update/latest",
+    "checksum": "50a1cb541ab18459505bed1a7dc4f4db"
 }

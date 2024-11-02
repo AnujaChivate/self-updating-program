@@ -1,3 +1,5 @@
+package com.selfupdate;
+
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -9,7 +11,7 @@ import com.google.gson.Gson;
 
 public class Update {
     // current application version
-    private static final String VERSION = "1.0"; 
+    private static final String VERSION = "1.1.0"; 
     // JSON file
     private static final String UPDATE_INFO_URL = "update-info.json";
 
@@ -37,7 +39,7 @@ public class Update {
         }
     }
 
-    private static void checkForUpdates() throws Exception {
+    public static void checkForUpdates() throws Exception {
         // Fetch update information
         UpdateInfo updateInfo = fetchUpdateInfo(); 
         if (updateInfo == null || updateInfo.version.equals(VERSION)) {
