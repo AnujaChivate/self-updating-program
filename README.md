@@ -30,11 +30,13 @@ Before running the application, ensure you have the following:
 
 2. **Compile command**
     ```bash
-    javac -cp libs/gson-2.11.0.jar src/Update.java -d bin
+    1.javac -cp ./libs/gson-2.11.0.jar src/com/selfupdate/Update.java -d ./bin
     ```
 3. **Run/Execute command**
     ```bash
-    java -cp "libs/gson-2.11.0.jar:bin" Update
+    2. Create jar file: jar cfm update-version-1.0.0.jar MANIFEST.MF -C bin .
+    3. Copy this jar file in server project
+    4. Run jar file of old version and see console.log: java -jar update-version-1.1.0.jar
     ```
     ![Application Screenshot](images/screenshot.png)
     This screenshot shows the output on the terminal.
